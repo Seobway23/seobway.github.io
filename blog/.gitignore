@@ -21,11 +21,3 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-.lock
-node_modules
-.yarn
-lock
-.lock
-yarn.lock
-.pnp

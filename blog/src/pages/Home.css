@@ -1,0 +1,62 @@
+.titlecontainer {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+}
+
+.morphism {
+  backdrop-filter: blur(4px);
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 35px;
+  box-shadow: 35px 35px 68px 0px rgba(62, 87, 116, 0.5),
+    inset -7px -7px 16px 0px rgba(62, 87, 116, 0.6),
+    inset 0px 11px 28px 0px rgb(255, 255, 255);
+  padding: 10px 30px;
+  margin: 20px;
+}
+
+.divrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 200px 0 200px;
+}
+
+/* 중간 화면 크기 (예: 태블릿)에 대한 스타일 */
+@media (max-width: 850px) {
+  .divrow {
+    margin: 30px 80px 0 80px;
+  }
+}
+
+/* 작은 화면 크기 (예: 모바일)에 대한 스타일 */
+@media (max-width: 200px) {
+  .divrow {
+    margin: 20px 20px 0 20px;
+  }
+}
+.rowitem {
+  backdrop-filter: blur(4px);
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 35px;
+  box-shadow: 35px 35px 68px 0px rgba(62, 87, 116, 0.5),
+    inset -7px -7px 16px 0px rgba(62, 87, 116, 0.6),
+    inset 0px 11px 28px 0px rgb(255, 255, 255);
+  padding: 10px 40px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.rowitem:hover {
+  background-color: rgba(62, 156, 240, 0.9); /* 좀 더 밝은 파란색 */
+  box-shadow: 35px 35px 68px 0px rgba(62, 87, 116, 0.5),
+    inset -7px -7px 16px 0px rgba(62, 87, 116, 0.6),
+    inset 0px 11px 28px 0px rgb(255, 255, 255);
+}
+
+.rowitem:hover h2 {
+  color: white;
+}
